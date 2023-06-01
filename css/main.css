@@ -21,3 +21,15 @@ body {
   color: gold !important;
   font-size: 130%;
 }
+
+#banner {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url('../img/tlo/8392211.jpg');
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+
+section {
+  min-height: 100vh;
+}
