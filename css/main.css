@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.dectx {
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  transform: scale(1.1, 1.1);
+}
+
+.navbar-brand:hover {
+  color: gold !important;
+  font-size: 130%;
+}
