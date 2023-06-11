@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -13,9 +14,10 @@
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <title>Dawid Florian</title>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-  <nav id="mainNav" class="d-none fixed-top d-lg-flex navbar navbar-expand">
+  <nav id="mainNav" class="d-none fixed-top d-lg-flex navbar navbar-expand" data-aos="zoom-in-down">
     <div class="container">
       <div class="me-auto w-25">
         <ul class="navbar-nav ">
@@ -33,7 +35,7 @@
           </li>
         </ul>
       </div>
-      <div class="mx-auto">
+      <div class="mx-auto" data-aos="fade-down" data-aos-duration="1000">
         <a class="navbar-brand bg-dark text-light px-3 rounded-pill dectx" href="#">Hello world</a>
       </div>
       <div class="ms-auto w-25">
@@ -62,7 +64,7 @@
       </div>
     </div>
   </nav>
-  <nav class="d-flex fixed-top d-lg-none navbar navbar-expand" id="mobUpNav">
+  <nav class="d-flex fixed-top d-lg-none navbar navbar-expand" id="mobUpNav" data-aos="zoom-in-down">
     <div class="container">
       <div class="mx-auto">
         <ul class="navbar-nav">
@@ -110,9 +112,10 @@
   </nav>
 </div>
 <div id="banner" class="d-flex justify-content-center align-items-center text-center">
-  <div>
-    <h1 class="h1 hero dectx">Hi, I'm Dawid Florian</h1>
-    <a class="h1" href="#about"><i class="bi bi-caret-down"></i></a>
+  <div id="herodiv">
+    <h1 class="h1 hero dectx" data-aos="fade-down" data-aos-duration="800">Hi, I'm Dawid Florian</h1>
+    <h3 class="h3" data-aos="fade-down" data-aos-duration="1000">I code in .Net</h2>
+    <a class="nav-link" href="#about" id="downlink" data-aos="fade-up" data-aos-duration="600"><i class="bi bi-caret-down"></i></a>
   </div>
 </div>
 <section id="about">
@@ -151,6 +154,8 @@ c
         mobUpNav.classList.remove('d-none');
       }
     })
+
+    AOS.init();
   </script>
 </body>
 </html>

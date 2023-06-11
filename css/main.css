@@ -33,3 +33,15 @@ body {
 section {
   min-height: 100vh;
 }
+
+#herodiv {
+  min-height: 180px;
+}
+
+#downlink {
+  font-size: 34px;
+}
+
+#downlink:hover {
+  font-size: 36px;
+}
