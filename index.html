@@ -36,7 +36,7 @@
           </li>
         </ul>
       </div>
-      <div class="mx-auto" data-aos="fade-down" data-aos-duration="1000">
+      <div class="mx-auto">
         <a class="navbar-brand bg-dark text-light px-3 rounded-pill dectx" href="#">Hello world</a>
       </div>
       <div class="ms-auto w-25">
@@ -114,21 +114,21 @@
 </div>
 <div id="banner" class="d-flex justify-content-center align-items-center text-center">
   <div id="herodiv">
-    <h1 class="h1 hero dectx" data-aos="fade-down" data-aos-duration="800">Hi, I'm Dawid Florian</h1>
+    <h1 class="h1 hero dectx" data-aos="fade-down">Hi, I'm Dawid Florian</h1>
     <div>
       <h3 class="h3" id="typedtext">&nbsp</h2>
     </div>
-    <a class="nav-link" href="#about" id="downlink" data-aos="fade-up" data-aos-duration="300" data-aos-delay="3000"><i class="bi bi-caret-down"></i></a>
+    <a class="nav-link" href="#about" id="downlink" data-aos="fade-up" data-aos-delay="1800"><i class="bi bi-caret-down"></i></a>
   </div>
 </div>
-<section id="about">
-a
+<section id="about" class="container py-5">
+  <h2 data-aos="fade-right" data-aos-delay="300" class="h1 py-lg-5"><span class="text-blue">|</span>About</h2>
 </section>
-<section id="resume">
-r
+<section id="resume" class="container py-5">
+  <h2 data-aos="fade-right" data-aos-delay="300" class="h1 py-lg-5"><span class="text-blue">|</span>Resume</h2>
 </section>
-<section id="contact">
-c
+<section id="contact" class="container py-5">
+  <h2 data-aos="fade-right" data-aos-delay="300" class="h1 py-lg-5"><span class="text-blue">|</span>Contact</h2>
 </section>
 
   <script>
@@ -160,8 +160,8 @@ c
 
 
     var typed = new Typed('#typedtext', {
-      strings: ['^600 I code in .Net'],
-      typeSpeed: 100,
+      strings: ['^200 I code in .Net'],
+      typeSpeed: 70,
     });
 
     AOS.init();

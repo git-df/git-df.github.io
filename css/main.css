@@ -19,6 +19,7 @@ body {
 
 .navbar-brand:hover {
   font-size: 130%;
+  color: #99DBF5 !important;
 }
 
 #banner {
@@ -28,6 +29,7 @@ body {
   background-size: cover;
   background-position: 50%, 50%;
   opacity: 80%;
+  background-attachment: fixed;
 }
 
 section {
@@ -48,4 +50,8 @@ section {
 
 .typed-cursor {
   display: none;
+}
+
+.text-blue {
+  color: #99DBF5;
 }
