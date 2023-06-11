@@ -34,7 +34,7 @@
         </ul>
       </div>
       <div class="mx-auto">
-        <a class="navbar-brand bg-dark text-light px-3 rounded-pill dectx" href="#">Dawid Florian</a>
+        <a class="navbar-brand bg-dark text-light px-3 rounded-pill dectx" href="#">Hello world</a>
       </div>
       <div class="ms-auto w-25">
         <ul class="navbar-nav ">
@@ -53,7 +53,7 @@
               <i class="bi bi-facebook"></i>
             </a>
           </li>
-          <li class="nav-item me-auto">
+          <li class="nav-item">
             <a class="nav-link mn-text px-3" target="_blank" href="https://www.instagram.com/dawid_florcio/">
               <i class="bi bi-instagram"></i>
             </a>
@@ -62,7 +62,7 @@
       </div>
     </div>
   </nav>
-  <nav class="d-flex d-lg-none navbar navbar-expand">
+  <nav class="d-flex fixed-top d-lg-none navbar navbar-expand" id="mobUpNav">
     <div class="container">
       <div class="mx-auto">
         <ul class="navbar-nav">
@@ -90,7 +90,7 @@
       </div>
     </div>
   </nav>
-  <nav class="fixed-bottom d-lg-none navbar bg-dark text-light shadow-lg navbar-expand py-0">
+  <nav class="fixed-bottom d-lg-none navbar bg-dark text-light shadow-lg navbar-expand py-0 d-none" id="mobDownNav">
     <div class="text-center w-100">
       <ul class="navbar-nav row">
         <li class="nav-item col">
@@ -109,8 +109,11 @@
     </div>
   </nav>
 </div>
-<div id="banner" class="d-flex justify-content-center align-items-center">
- <h1 class="h1 hero dectx">Hello world!</h1>
+<div id="banner" class="d-flex justify-content-center align-items-center text-center">
+  <div>
+    <h1 class="h1 hero dectx">Hi, I'm Dawid Florian</h1>
+    <a class="h1" href="#about"><i class="bi bi-caret-down"></i></a>
+  </div>
 </div>
 <section id="about">
 a
@@ -124,12 +127,16 @@ c
 
   <script>
     var mainNav = document.getElementById('mainNav');
+    var mobDownNav = document.getElementById('mobDownNav');
+    var mobUpNav = document.getElementById('mobUpNav');
     var mnItems = document.getElementsByClassName('mn-text');
 
 
     window.addEventListener('scroll', function() {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 200) {
         mainNav.classList.add('bg-dark', 'shadow', 'text-light');
+        mobDownNav.classList.remove('d-none');
+        mobUpNav.classList.add('d-none');
 
         Array.from(mnItems).forEach(e => {
           e.classList.add('text-light')
@@ -139,6 +146,9 @@ c
         Array.from(mnItems).forEach(e => {
           e.classList.remove('text-light')
         })
+
+        mobDownNav.classList.add('d-none');
+        mobUpNav.classList.remove('d-none');
       }
     })
   </script>

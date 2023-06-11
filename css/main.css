@@ -25,12 +25,12 @@ body {
 #banner {
   margin: 0 auto;
   height: 100vh;
-  background-image: url('../img/tlo/8392211.jpg');
+  background-image: url('../img/tlo/lake-2456391_1920.jpg');
   background-size: cover;
   background-position: 50%, 50%;
+  opacity: 80%;
 }
 
 section {
   min-height: 100vh;
-  background-color: #1a2e35;
 }
