@@ -45,3 +45,7 @@ section {
 #downlink:hover {
   font-size: 36px;
 }
+
+.typed-cursor {
+  display: none;
+}
