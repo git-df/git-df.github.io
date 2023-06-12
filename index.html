@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts-Lato-Pacifico.css" rel="stylesheet">
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+
     <title>Dawid Florian</title>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    
 </head>
 <body>
   <nav id="mainNav" class="d-none fixed-top d-lg-flex navbar navbar-expand" data-aos="zoom-in-down">
@@ -131,40 +138,9 @@
   <h2 data-aos="fade-right" data-aos-delay="300" class="h1 py-lg-5"><span class="text-blue">|</span>Contact</h2>
 </section>
 
-  <script>
-    var mainNav = document.getElementById('mainNav');
-    var mobDownNav = document.getElementById('mobDownNav');
-    var mobUpNav = document.getElementById('mobUpNav');
-    var mnItems = document.getElementsByClassName('mn-text');
-
-
-    window.addEventListener('scroll', function() {
-      if (window.pageYOffset > 200) {
-        mainNav.classList.add('bg-dark', 'shadow', 'text-light');
-        mobDownNav.classList.remove('d-none');
-        mobUpNav.classList.add('d-none');
-
-        Array.from(mnItems).forEach(e => {
-          e.classList.add('text-light')
-        })
-      } else {
-        mainNav.classList.remove('bg-dark', 'shadow', 'text-light');
-        Array.from(mnItems).forEach(e => {
-          e.classList.remove('text-light')
-        })
-
-        mobDownNav.classList.add('d-none');
-        mobUpNav.classList.remove('d-none');
-      }
-    })
-
-
-    var typed = new Typed('#typedtext', {
-      strings: ['^200 I code in .Net'],
-      typeSpeed: 70,
-    });
-
-    AOS.init();
-  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/typed.umd.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
