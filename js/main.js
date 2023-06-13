@@ -25,7 +25,7 @@ window.addEventListener('scroll', function() {
 })
 
 var typed = new Typed('#typedtext', {
-    strings: ['^200 I code in .Net'],
+    strings: ['^500 I code in .Net ^1000', 'I drink coffee^500.^500.^500. when I code ;)'],
     typeSpeed: 70,
 });
 
