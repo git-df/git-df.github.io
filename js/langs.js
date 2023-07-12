@@ -17,6 +17,16 @@ let data = {
     ]
 }
 
+function translate(lang) {
+    let dictlang = lang == "1" ? data.polish : data.english;
+
+    dictlang.forEach(dict => {
+        document.getElementsByName(dict[0]).forEach(el => {
+            el.textContent = dict[1];
+        });
+    })
+}
+
 langlinks.forEach(link => {
     link.addEventListener("click", () =>{
             document.querySelectorAll(".langs .active").forEach(activelink => {
@@ -24,14 +34,28 @@ langlinks.forEach(link => {
         })
         link.classList.add("active");
 
-
         let selectlang = link.getAttribute("Language");
-        let dictlang = selectlang == "1" ? data.polish : data.english;
-
-        dictlang.forEach(dict => {
-            document.getElementsByName(dict[0]).forEach(el => {
-                el.textContent = dict[1];
-            });
-        })
+        localStorage.setItem("language", selectlang);
+        translate(selectlang);
     })
 })
+
+if(localStorage.getItem("language") == null)
+{
+    localStorage.setItem("language", "0");
+} else {
+    console.log("nie pusta pamięć");
+    if(localStorage.getItem("language") == "1") {
+        let activelinks = document.querySelectorAll(".langs .active");
+
+        document.querySelectorAll(".langs a").forEach(activelink => {
+            activelink.classList.add("active");
+        })
+        
+        activelinks.forEach(activelink => {
+            activelink.classList.remove("active");
+        })
+        
+        translate("1");
+    }
+}
