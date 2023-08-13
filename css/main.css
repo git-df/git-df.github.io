@@ -21,11 +21,14 @@ body {
 #banner {
   margin: 0 auto;
   height: 100vh;
-  background-image: url('../img/tlo/7-min-cut2.jpg');
+  background-image: url('../img/tlo/1-cut.jpg');
   background-size: cover;
   background-position: 50%, 50%;
   opacity: 85%;
   background-attachment: fixed;
+  transition-duration:2s;
+  -webkit-transition-duration:2s;
+  transition-property:background-image;
 }
 
 
