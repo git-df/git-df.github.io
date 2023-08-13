@@ -7,6 +7,7 @@ var banner = document.getElementById('banner');
 var i = 0;
 var slideTime = 4000;
 var currentImage = new Image();
+
 var images = [
     '../img/tlo/1-cut-min.jpg',
     '../img/tlo/2-cut-min.jpg',
@@ -43,19 +44,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-function change() {
-    banner.style.backgroundImage = "url(" + images[i] + ")";
-}
-
-function preload() {
-    currentImage = new Image();
-
-    currentImage.onload = change;
-    currentImage.src = images[i];
-}
-
 function changePicture() {
-    preload();
+    currentImage.onload = function(){
+        banner.style.backgroundImage = "url(" + this.src + ")";
+    }
+    currentImage.src = images[i];
 
     if (i < images.length - 1) {
         i++;
