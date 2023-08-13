@@ -44,7 +44,6 @@ if(localStorage.getItem("language") == null)
 {
     localStorage.setItem("language", "0");
 } else {
-    console.log("nie pusta pamięć");
     if(localStorage.getItem("language") == "1") {
         let activelinks = document.querySelectorAll(".langs .active");
 
