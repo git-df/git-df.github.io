@@ -4,23 +4,19 @@ var mobUpNav = document.getElementById('mobUpNav');
 var mnItems = document.getElementsByClassName('mn-text');
 var banner = document.getElementById('banner');
 
-var i = 0;
-var slideTime = 4000;
+var i = 1;
+var slideTime = 8000;
 var currentImage = new Image();
 
 var images = [
-    '../img/tlo/1-cut-min.jpg',
     '../img/tlo/2-cut-min.jpg',
+    '../img/tlo/13-cut-min.jpg',
     '../img/tlo/3-cut-min.jpg',
-    '../img/tlo/4-cut-min.jpg',
-    '../img/tlo/5-cut-min.jpg',
-    '../img/tlo/6-cut-min.jpg',
     '../img/tlo/7-cut-min.jpg',
+    '../img/tlo/4-cut-min.jpg',
     '../img/tlo/8-cut-min.jpg',
     '../img/tlo/9-cut-min.jpg',
-    '../img/tlo/11-cut-min.jpg',
-    '../img/tlo/12-cut-min.jpg',
-    '../img/tlo/13-cut-min.jpg'
+    '../img/tlo/11-cut-min.jpg'
 ];
 
 window.addEventListener('scroll', function() {
@@ -65,4 +61,4 @@ var typed = new Typed('#typedtext', {
 });
 
 AOS.init();
-changePicture();
+setTimeout(changePicture, slideTime);
