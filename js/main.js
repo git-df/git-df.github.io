@@ -9,14 +9,14 @@ var slideTime = 8000;
 var currentImage = new Image();
 
 var images = [
+    '../img/tlo/4-cut-min.jpg',
+    '../img/tlo/8-cut-min.jpg',
     '../img/tlo/2-cut-min.jpg',
     '../img/tlo/13-cut-min.jpg',
     '../img/tlo/3-cut-min.jpg',
     '../img/tlo/7-cut-min.jpg',
-    '../img/tlo/4-cut-min.jpg',
-    '../img/tlo/8-cut-min.jpg',
     '../img/tlo/9-cut-min.jpg',
-    '../img/tlo/11-cut-min.jpg'
+    '../img/tlo/11-cut-min.jpg',
 ];
 
 window.addEventListener('scroll', function() {
