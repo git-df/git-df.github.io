@@ -38,7 +38,7 @@
               <a class="nav-link mn-text" href="#contact" name="contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mn-text" target="_blank" href="file/CV.pdf" name="cv">CV</a>
+              <a class="nav-link mn-text" href="" name="cv" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm">CV</a>
             </li>
           </ul>
         </div>
@@ -128,11 +128,21 @@
             <a class="nav-link text-light" href="#contact"><i class="bi bi-envelope"></i><br><span name="contact">Contact</span></a>
           </li>
           <li class="nav-item col">
-            <a class="nav-link text-light" href="file/CV.pdf"><i class="bi bi-person-vcard"></i><br><span name="">CV</span></a>
+            <a class="nav-link text-light" href="" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm"><i class="bi bi-person-vcard"></i><br><span name="">CV</span></a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <!-- CV Modal -->
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content bg-dark p-4 d-flex justify-content-between">
+          <a href="file/CV.pdf" class="btn btn-secondary text-dark m-1">Polska wersja CV</a>
+          <a href="file/CV.pdf" class="btn btn-secondary text-dark m-1">English version of cv</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero banner -->
     <div id="banner" class="d-flex justify-content-center align-items-center text-center">
