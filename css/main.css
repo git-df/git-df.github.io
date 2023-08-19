@@ -109,3 +109,7 @@ body {
 .resume .resume-item h5 {
   line-height: 18px;
 }
+
+#mobDownNav {
+  font-size: 10px;
+}
