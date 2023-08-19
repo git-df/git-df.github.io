@@ -2,9 +2,11 @@ let langlinks = document.querySelectorAll(".langs a");
 let langsDict = [
     ["nav_about", "ABOUT", "O\u00A0MINE"],
     ["nav_resume","RESUME", "ŻYCIORYS"],
+    ["nav_projects","PROJECTS", "PROJEKTY"],
     ["nav_contact","CONTACT", "KONTAKT"],
     ["h2_about", "About", "O\u00A0mnie"],
     ["h2_resume","Resume", "Życiorys"],
+    ["h2_projects","Projects", "Projekty"],
     ["h2_contact","Contact", "Kontakt"],
     ["h1_hero","Hi, I'm Dawid Florian", "Cześć, jestem Dawid Florian"]
 ];

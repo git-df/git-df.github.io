@@ -1,3 +1,8 @@
+:root {
+  --c1: #73d7ff;
+  --c2: hsl(196, 100%, 98%);
+}
+
 body {
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
@@ -15,7 +20,7 @@ body {
 
 .navbar-brand:hover {
   font-size: 130%;
-  color: #99DBF5 !important;
+  color: var(--c1) !important;
 }
 
 #banner {
@@ -49,7 +54,11 @@ body {
 }
 
 .text-blue {
-  color: #99DBF5;
+  color: var(--c1);
+}
+
+.bg-blue {
+  background-color: var(--c2);
 }
 
 .langs {
@@ -73,4 +82,30 @@ body {
   background: rgb(63, 63, 63);
   color: #f8f9fa;
   padding: 6px;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+
+.resume .resume-item {
+  border-left: 2px solid var(--c1);
+  position: relative;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--c1);
+}
+
+.resume .resume-item h5 {
+  line-height: 18px;
 }
