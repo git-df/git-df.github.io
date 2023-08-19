@@ -1,28 +1,18 @@
-let langlinks = document.querySelectorAll(".langs a")
-
-let data = {
-    english: [
-        ["about", "About"],
-        ["resume","Resume"],
-        ["contact","Contact"],
-        ["cv","CV"],
-        ["heroh1","Hi, I'm Dawid Florian"],
-    ],
-    polish: [
-        ["about", "O\u00A0mnie"],
-        ["resume","Życiorys"],
-        ["contact","Kontakt"],
-        ["cv","CV"],
-        ["heroh1","Cześć, jestem Dawid Florian"],
-    ]
-}
+let langlinks = document.querySelectorAll(".langs a");
+let langsDict = [
+    ["nav_about", "ABOUT", "O\u00A0MINE"],
+    ["nav_resume","RESUME", "ŻYCIORYS"],
+    ["nav_contact","CONTACT", "KONTAKT"],
+    ["h2_about", "About", "O\u00A0mnie"],
+    ["h2_resume","Resume", "Życiorys"],
+    ["h2_contact","Contact", "Kontakt"],
+    ["h1_hero","Hi, I'm Dawid Florian", "Cześć, jestem Dawid Florian"]
+];
 
 function translate(lang) {
-    let dictlang = lang == "1" ? data.polish : data.english;
-
-    dictlang.forEach(dict => {
+    langsDict.forEach(dict => {
         document.getElementsByName(dict[0]).forEach(el => {
-            el.textContent = dict[1];
+            el.textContent = dict[lang == "1" ? 2 : 1];
         });
     })
 }
