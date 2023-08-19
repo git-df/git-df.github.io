@@ -6,9 +6,6 @@ var banner = document.getElementById('banner');
 
 var i = 1;
 var slideTime = 8000;
-var currentImage = new Image();
-currentImage.src = '../img/tlo/4-cut-min.jpg';
-currentImage.onload = (() => {});
 
 var images = [
     '../img/tlo/4-cut-min.jpg',
