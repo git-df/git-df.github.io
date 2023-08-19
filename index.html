@@ -21,6 +21,12 @@
     <link href="css/aos.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/fonts-Lato-Pacifico.css" rel="stylesheet">
+
+    <script>
+      var currentImage = new Image();
+      currentImage.src = '../img/tlo/4-cut-min.jpg';
+      currentImage.onload = (() => {});
+    </script>
   </head>
   <body>
     <!-- Desktop nav -->
@@ -255,31 +261,78 @@
       </section>
 
       <!-- Projscts section -->
-      <section id="projects" class="container">
-        <div>
-          <header>
-            <h2 data-aos="fade-up" class="h2"><span class="text-blue">|</span><span name="h2_projects">Projects</span></h2>
-            <p>a</p>
+      <section id="projects" class="container pt-5 pb-5">
+        <div class="col-lg-8 mx-auto">
+          <header class="mt-lg-5">
+            <h2 data-aos="fade-up" class="h2 mb-3"><span class="text-blue">|</span><span name="h2_projects">Projects</span></h2>
+            <p data-aos="fade-up" class="mb-3">I graduated this year with a degree in Computer Science and have been immersed
+              in the world of IT for over 8 years since my high school days. Along the way, I've
+              absorbed a wealth of knowledge and skills in the field. My fascination with the
+              .Net platform began during my freshman year at university. Throughout my
+              studies, I've executed multiple projects using these tools, including a car rental
+              system (built with Blazor, Rest API, MS SQL). This journey has taught me
+              extensively, particularly in the hands-on application of these technologies.
+              </p>
           </header>
           <article>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="card-deck d-lg-flex justify-content-between">
+              <div class="card m-2 bg-blue">
+                <div class="card-body">
+                  <h5 class="card-title text-blue">Rent Cars</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <small class="text-muted">Blazor + API | MS SQL | EF</small>
+                  <a href="https://github.com/git-df/dotnet-RentCars" class="btn btn-sm btn-secondary">Go</a>
+                </div>
+              </div>
+              <div class="card m-2 bg-blue">
+                <div class="card-body">
+                  <h5 class="card-title text-blue">Bloggie</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <small class="text-muted">Razor Pages | MS SQL | EF</small>
+                  <a href="https://github.com/git-df/dotnet-Bloggie" class="btn btn-sm btn-secondary">Go</a>
+                </div>
+              </div>
+              <div class="card m-2 bg-blue">
+                <div class="card-body">
+                  <h5 class="card-title text-blue">Deatailer</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <small class="text-muted">MVC | PostgreSQL | Dapper</small>
+                  <a href="https://github.com/git-df/dotnet-Detailer" class="btn btn-sm btn-secondary">Go</a>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
       <!-- Contact section -->
-      <section id="contact" class="container">
-        <div>
-          <header>
-            <h2 data-aos="fade-up" class="h2"><span class="text-blue">|</span><span name="h2_contact">Contact</span></h2>
-            <p>a</p>
+      <section id="contact" class="container pt-5 pb-5 bg-blue">
+        <div class="col-lg-8 mx-auto pb-4">
+          <header class="mt-lg-5">
+            <h2 data-aos="fade-up" class="h2 mb-3"><span class="text-blue">|</span><span name="h2_contact">Contact</span></h2>
+            <p data-aos="fade-up" class="mb-3">Feel free to contact me through my social medias or email.</p>
           </header>
           <article>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div data-aos="fade-up" class="bg-light shadow-lg rounded p-4">
+s
+            </div>
           </article>
         </div>
       </section>
     </main>
+
+    <footer class="container py-5">
+      <div class="col-lg-8 mx-auto">
+        <strong>© 2023 Dawid Florian. </strong><span> All rights reserved.</span>
+      </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/aos.js"></script>
