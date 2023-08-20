@@ -5,9 +5,6 @@ let langsDict = [
     ["nav_projects", "PROJECTS", "PROJEKTY"],
     ["nav_contact", "CONTACT", "KONTAKT"],
 
-    ["1_modal", "Polish version of CV", "Polska wersja CV"],
-    ["2_modal", "English version of CV", "Angielska wersja CV"],
-
     ["h1_hero", "Hi, I'm Dawid Florian", "Cześć, jestem Dawid Florian"],
 
     ["h2_about", "About", "O\u00A0mnie"],
