@@ -16,7 +16,7 @@ let langsDict = [
     ["ah2_about",".Net Developer", "Programista .Net"],
     ["p1_about"," Birthday: 6 May 1999", " Urodziny: 6 Maj 1999"],
     ["p2_about"," Age: 24", " Wiek: 24"],
-    ["p3_about"," Degree: Computer science enginer", " Stopień naukowy: Inżynier IT"],
+    ["p3_about"," Degree: Computer science engineer", " Stopień naukowy: Inżynier IT"],
     ["p4_about"," Email: dawidflorian99@gmail.com", " Email: dawidflorian99@gmail.com"],
     ["p5_about"," Website: www.dawidflorian.pl", " Strona internetowa: dawidflorian.pl"],
     ["p6_about"," City: Krosno / Rzeszów, Poland", " Miasto: Krosno / Rzeszów, Polska"],
