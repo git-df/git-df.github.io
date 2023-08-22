@@ -8,14 +8,14 @@ var i = 1;
 var slideTime = 8000;
 
 var images = [
-    '../img/tlo/4-cut-min.jpg',
-    '../img/tlo/8-cut-min.jpg',
-    '../img/tlo/2-cut-min.jpg',
-    '../img/tlo/13-cut-min.jpg',
-    '../img/tlo/3-cut-min.jpg',
-    '../img/tlo/7-cut-min.jpg',
-    '../img/tlo/9-cut-min.jpg',
-    '../img/tlo/11-cut-min.jpg',
+    '../img/tlo/4-cut-min.webp',
+    '../img/tlo/8-cut-min.webp',
+    '../img/tlo/2-cut-min.webp',
+    '../img/tlo/13-cut-min.webp',
+    '../img/tlo/3-cut-min.webp',
+    '../img/tlo/7-cut-min.webp',
+    '../img/tlo/9-cut-min.webp',
+    '../img/tlo/11-cut-min.webp',
 ];
 
 window.addEventListener('scroll', function() {
