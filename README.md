@@ -8,3 +8,4 @@ Project is created with:
 * Bootstrap
 * JavaScript
 * Html / Css
+* PurgeCSS

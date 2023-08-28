@@ -71,6 +71,7 @@ function translate(lang) {
     langsDict.forEach(dict => {
         document.getElementsByName(dict[0]).forEach(el => {
             el.textContent = dict[lang == "1" ? 2 : 1];
+            document.querySelector('html').lang = lang == "1" ? "pl" : "en";
         });
     })
 }
