@@ -108,3 +108,7 @@ body {
 #mobDownNav {
   font-size: 10px;
 }
+
+.project-link:hover {
+  background-color: var(--c2);
+}

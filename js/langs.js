@@ -57,9 +57,9 @@ let langsDict = [
         "During my studies, I completed numerous projects using .NET, including a car rental system (built with Blazor, Rest API, MS SQL). This journey taught me a lot, especially in the practical application of these technologies.", 
         "W trakcie studiów zrealizowałem wiele projektów z wykorzystaniem .NET, w tym system wynajmu samochodów (Blazor, Rest API, MS SQL). Ta podróż wiele mnie nauczyła, szczególnie w praktycznym zastosowaniu tych technologii."
     ],
-    ["1h5_projects"," ", " "],
-    ["2h5_projects"," ", " "],
-    ["3h5_projects"," ", " "],
+    ["1h5_projects","This is a comprehensive car rental system developed as a part of an engineering degree capstone project.", "Jest to kompleksowy system wynajmu samochodów opracowany w ramach projektu dyplomowego na zakończenie studiów inżynierskich."],
+    ["2h5_projects","This project is focused on developing a feature-rich and customizable blogging platform. With Bloggie, users can create, manage, comment and like blog posts with a user-friendly interface.", "Projekt ten koncentruje się na opracowaniu bogatej w funkcje i konfigurowalnej platformy blogowej. Dzięki aplikacji możliwe jest tworzenie, zarządzanie, komentowanie oraz lajkowania postów na blogu za pomocą przyjaznego dla użytkownika interfejsu."],
+    ["3h5_projects","This project aims to provide a comprehensive solution for managing various aspects of a car detailing business.", "Projekt ten ma na celu dostarczenie kompleksowego rozwiązania do zarządzania różnymi aspektami działalności Car Detailingu."],
     
     ["h2_contact","Contact", "Kontakt"],
     ["p_contact","Feel free to contact me through my social medias or email.", "Zapraszam do kontaktu przez moje media społecznościowe lub e-mail."],
