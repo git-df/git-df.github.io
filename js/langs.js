@@ -5,7 +5,7 @@ let langsDict = [
     ["nav_projects", "PROJECTS", "PROJEKTY"],
     ["nav_contact", "CONTACT", "KONTAKT"],
 
-    ["h1_hero", "Hi, I'm Dawid Florian", "Cześć, jestem Dawid Florian"],
+    ["h1_hero", "Hi, I'm Dawid Florian", "Witaj, jestem Dawid Florian"],
 
     ["h2_about", "About", "O\u00A0mnie"],
     [
