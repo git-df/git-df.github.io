@@ -1,59 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Config -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body class="bg-dark" onload="updatePapaMenu()">
-    <div id="fb-root"></div>
-    <script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="EuCWaLOw"></script>
 
-    <div class="container">
+    <!-- SEO -->
+    <meta name="author" content="Dawid Florian" />
+    <title>Daily Dish</title>
 
-        <div class="row">
-            <div class="col"></div>
-            <div class="col p-0" style="min-width: 500px">
-                <div 
-                    class="fb-page"
-                    data-href="https://www.facebook.com/restauracjaportius"
-                    data-height="745"
-                    data-small-header="true"
-                    data-adapt-container-width="true"
-                    data-hide-cover="true"
-                    data-show-posts="true"
-                    data-width="500">
-                </div>
-            </div>
-            <div class="col"></div>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="../image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="../image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+
+    <!-- Style -->
+    <link href="../css/dev/bootstrap.min.css" rel="stylesheet" >
+    <link href="../css/dev/bootstrap-icons.css" rel="stylesheet" type="text/css">
+
+    <style>
+
+      .restaurant-container {
+        max-width: 400px;
+        width: inherit;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+    </style>
+
+    <script>
+
+      async function onloadBody() {
+        await loadPapaMenu();
+        await loadLankaMenu();
+      }
+
+      async function loadPapaMenu() {
+        const papaMenu = document.getElementById('papaMenu');
+        const proxyUrl = 'https://api.allorigins.win/get?url=';
+        const targetUrl = encodeURIComponent('https://papacafe.pl/obiady/');
+        const response = await fetch(proxyUrl + targetUrl);
+        const data = await response.json();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data.contents, 'text/html');
+        const menuElement = doc.evaluate('/html/body/div[2]/div/div/main/article/div/div/div[3]/div[1]', doc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        papaMenu.innerHTML = menuElement.outerHTML;
+      }
+
+      async function loadLankaMenu() {
+        const now = new Date();
+        var xpathLanka;
+        switch(now.getDay()) {
+          case 1:
+          default:
+            xpathLanka = '/html/body/main/section/div/div/div/div[2]/div/div/div/div[5]';
+            break;
+          case 2:
+            xpathLanka = '/html/body/main/section/div/div/div/div[2]/div/div/div/div[6]';
+            break;
+          case 3:
+            xpathLanka = '/html/body/main/section/div/div/div/div[2]/div/div/div/div[7]';
+            break;
+          case 4:
+            xpathLanka = '/html/body/main/section/div/div/div/div[2]/div/div/div/div[8]';
+            break;
+          case 5:
+            xpathLanka = '/html/body/main/section/div/div/div/div[2]/div/div/div/div[9]';
+            break;
+        }
+
+        const lankaMenu = document.getElementById('lankaMenu');
+        const proxyUrl = 'https://api.allorigins.win/get?url=';
+        const targetUrl = encodeURIComponent('https://www.lankacatering.pl/restauracja/lanka-catering');
+        const response = await fetch(proxyUrl + targetUrl);
+        const data = await response.json();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data.contents, 'text/html');
+        const menuElement = doc.evaluate(xpathLanka, doc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        lankaMenu.innerHTML = menuElement.outerHTML;
+      }
+
+    </script>
+
+  </head>
+  <body class="bg-dark" onload="onloadBody()">
+    <div class="row p-0">
+      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end py-3">
+        <div class="restaurant-container">
+          <div 
+              class="fb-page"
+              data-href="https://www.facebook.com/restauracjaportius"
+              data-height="675"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="true"
+              data-show-posts="true"
+              data-width="400">
+          </div>
         </div>
-    
-        <div class="row my-2">
-
-            <div class="col"></div>
-            <div class="col" id="papaMenu" style="min-width: 500px; background-color: #fff8ed;">
-                <h1 class="py-2">Papa Cafe</h1>
-            </div>
-            <div class="col"></div>
-
-            <script>
-
-                async function  updatePapaMenu() {
-                    const papaMenu = document.getElementById('papaMenu');
-                    const proxyUrl = 'https://api.allorigins.win/get?url=';
-                    const targetUrl = encodeURIComponent('https://papacafe.pl/obiady/');
-                    const response = await fetch(proxyUrl + targetUrl);
-                    const data = await response.json();
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(data.contents, 'text/html');
-                    const menuElement = doc.evaluate('/html/body/div[2]/div/div/main/article/div/div/div[3]/div[1]', doc, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    papaMenu.innerHTML += menuElement.outerHTML;
-                }
-            </script>
+      </div>
+      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-start py-3">
+        <div class="restaurant-container">
+          <b>Papa Cafe</b>
+          <div id="papaMenu">...</div>
         </div>
+      </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <div class="row p-0">
+      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end py-3">
+        <div class="restaurant-container">
+          <b>Lanka</b>
+          <div id="lankaMenu">...</div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-start py-3">
+        <div class="restaurant-container">
+          <b>...</b>
+          <div>...</div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="EuCWaLOw"></script>
+  </body>
 </html>
