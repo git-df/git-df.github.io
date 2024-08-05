@@ -25,9 +25,12 @@
       .restaurant-container {
         max-width: 400px;
         width: inherit;
-        background-color: antiquewhite;
         border-radius: 5px;
         padding: 10px;
+      }
+
+      .container {
+        max-width: 470px;
       }
 
     </style>
@@ -51,59 +54,92 @@
     </script>
 
   </head>
+  
   <body class="bg-dark" onload="onloadBody()">
-    <div class="row p-0">
-      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end py-3">
-        <div class="restaurant-container">
-          <div 
-              class="fb-page"
-              data-href="https://www.facebook.com/restauracjaportius"
-              data-height="675"
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-posts="true"
-              data-width="400">
+
+    <main class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Portius
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div 
+                class="fb-page"
+                data-href="https://www.facebook.com/restauracjaportius"
+                data-height="675"
+                data-small-header="true"
+                data-adapt-container-width="true"
+                data-hide-cover="true"
+                data-show-posts="true"
+                data-width="400">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Lanka
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div 
+                class="fb-page"
+                data-href="https://www.facebook.com/LankaKrosno"
+                data-height="675"
+                data-small-header="true"
+                data-adapt-container-width="true"
+                data-hide-cover="true"
+                data-show-posts="true"
+                data-width="400">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Wodnik
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div 
+                class="fb-page"
+                data-href="https://www.facebook.com/zajazdwodnik"
+                data-height="675"
+                data-small-header="true"
+                data-adapt-container-width="true"
+                data-hide-cover="true"
+                data-show-posts="true"
+                data-width="400">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Papa
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="restaurant-container">
+                <b>Papa Cafe</b>
+                <div id="papaMenu">...</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end py-3">
-        <div class="restaurant-container">
-          <div 
-              class="fb-page"
-              data-href="https://www.facebook.com/zajazdwodnik"
-              data-height="675"
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-posts="true"
-              data-width="400">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row p-0">
-      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-end py-3">
-        <div class="restaurant-container">
-          <div 
-              class="fb-page"
-              data-href="https://www.facebook.com/LankaKrosno"
-              data-height="675"
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-posts="true"
-              data-width="400">
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-6 d-flex justify-content-center justify-content-xl-start py-3">
-        <div class="restaurant-container">
-          <b>Papa Cafe</b>
-          <div id="papaMenu">...</div>
-        </div>
-      </div>
-    </div>
+    </main>
+    
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="EuCWaLOw"></script>
   </body>
