@@ -10,12 +10,12 @@ let langsDict = [
     ["h2_about", "About", "O\u00A0mnie"],
     [
         "p_about", 
-        "Hello! Welcome to my page. Here, you will find information about me and my experience. I am an ambitious programmer with an engineering degree. I have been working and developing at my current company for over two years, starting as a junior IT specialist. For more than a year, I have been programming in .NET technology, primarily working on APIs and microservices that form the foundation of modern applications. I am passionately developing my skills. I am a creative person who enjoys challenges and is open to new experiences.",
-        "Hej! Miło mi cię gościć na mojej stronie. Znajdziesz tu informacje o mnie oraz o moim doświadczeniu. Jestem ambitnym programistą z tytułem inżyniera. W obecnej firmie pracuję i rozwijam się już ponad dwa lata, zaczynałem jako młodszy specjalista IT. Od ponad roku zajmuję się programowaniem w technologi .NET. Przeważnie są to interfejsy API oraz mikroserwisy, które stanowią fundament nowoczesnych aplikacji. Z pasją rozwijam swoje umiejętności, jestem osobą kreatywną, lubiącą wyzwania i otwartą na nowe doświadczenia."
+        "I am an ambitious programmer with an engineering degree. I have been working and developing at my current company for over two years, starting as a junior IT specialist. For more than a year, I have been programming in .NET technology, primarily working on APIs and microservices that form the foundation of modern applications. I am passionately developing my skills. I am a creative person who enjoys challenges and is open to new experiences.",
+        "Jestem ambitnym programistą z tytułem inżyniera. W obecnej firmie pracuję i rozwijam się już ponad dwa lata, zaczynałem jako młodszy specjalista IT. Od ponad roku zajmuję się programowaniem w technologi .NET. Przeważnie są to interfejsy API oraz mikroserwisy, które stanowią fundament nowoczesnych aplikacji. Z pasją rozwijam swoje umiejętności, jestem osobą kreatywną, lubiącą wyzwania i otwartą na nowe doświadczenia."
     ],
     ["ah2_about",".Net Developer", "Programista .Net"],
     ["p1_about"," 6 May 1999", " 6 Maj 1999"],
-    ["p2_about"," 24 years old", " 24 lat"],
+    ["p2_about"," 25 years old", " 25 lat"],
     ["p3_about"," Computer science engineer", " Inżynier IT"],
     ["p4_about"," dawidflorian99@gmail.com", " dawidflorian99@gmail.com"],
     ["p5_about"," dawidflorian.pl", " dawidflorian.pl"],
