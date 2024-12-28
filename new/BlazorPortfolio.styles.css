@@ -1,14 +1,14 @@
-/* new/Layout/Footer.razor.rz.scp.css */
+/* /Layout/Footer.razor.rz.scp.css */
 footer[b-ffyhy5v3b5] {
     opacity: 0.8 !important;
 }
-/* new/Layout/MainLayout.razor.rz.scp.css */
+/* /Layout/MainLayout.razor.rz.scp.css */
 main[b-aueitb3rf8] {
     margin-top: 90px;
     border-radius: 15px;
     opacity: 0.8 !important;
 }
-/* new/Layout/NavMenu.razor.rz.scp.css */
+/* /Layout/NavMenu.razor.rz.scp.css */
 .navbar-brand[b-1jbbd8u0ys] {
     color: white;
     font-family: "Poppins", sans-serif;
@@ -27,9 +27,9 @@ a:hover[b-1jbbd8u0ys] {
 nav[b-1jbbd8u0ys] {
     opacity: 0.8 !important;
 }
-/* new/Pages/About/AboutPage.razor.rz.scp.css */
-/* new/Pages/Contacts/ContactsPage.razor.rz.scp.css */
-/* new/Pages/Home/HomePage.razor.rz.scp.css */
+/* /Pages/About/AboutPage.razor.rz.scp.css */
+/* /Pages/Contacts/ContactsPage.razor.rz.scp.css */
+/* /Pages/Home/HomePage.razor.rz.scp.css */
 main[b-xgicnfjlux] {
     position: fixed !important;
     top: 50%;
@@ -51,7 +51,7 @@ a:hover[b-xgicnfjlux] {
     text-decoration: none !important;
     color: #18d26e !important;
 }
-/* new/Pages/Home/HomePageNav.razor.rz.scp.css */
+/* /Pages/Home/HomePageNav.razor.rz.scp.css */
 a[b-yg4roqu1ka] {
     color: white !important;
 }
@@ -69,5 +69,5 @@ a:hover[b-yg4roqu1ka] {
     color: #18d26e !important;
     border-bottom: none !important;
 }
-/* new/Pages/Projects/ProjectsPage.razor.rz.scp.css */
-/* new/Pages/Resume/ResumePage.razor.rz.scp.css */
+/* /Pages/Projects/ProjectsPage.razor.rz.scp.css */
+/* /Pages/Resume/ResumePage.razor.rz.scp.css */
