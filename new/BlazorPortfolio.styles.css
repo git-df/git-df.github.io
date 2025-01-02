@@ -70,4 +70,25 @@ a:hover[b-yg4roqu1ka] {
     border-bottom: none !important;
 }
 /* /Pages/Projects/ProjectsPage.razor.rz.scp.css */
+/* /Pages/Resume/ResumeItem.razor.rz.scp.css */
+.resume-item[b-53xippqsb7] {
+    border-left: 2px solid #18d26e;
+    position: relative;
+}
+
+.resume-item[b-53xippqsb7]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #18d26e;
+}
+
+.resume-item h5[b-53xippqsb7] {
+    line-height: 18px;
+}
 /* /Pages/Resume/ResumePage.razor.rz.scp.css */
