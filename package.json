@@ -1,0 +1,12 @@
+{
+  "name": "dawidflorian-pl",
+  "private": true,
+  "description": "Personal portfolio website - build step for production CSS",
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "devDependencies": {
+    "purgecss": "6.0.0",
+    "subset-font": "2.9.0"
+  }
+}

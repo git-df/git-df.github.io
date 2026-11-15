@@ -55,9 +55,11 @@ function changePicture() {
 }
 
 var typed = new Typed('#typedtext', {
-    strings: ['^500 I code in .Net ^1000', 'I drink coffee^500.^500.^500. when I code ;)'],
+    strings: ['^500 Senior .NET Developer ^1000', 'I drink coffee^500.^500.^500. when I code ;)'],
     typeSpeed: 70,
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();
 
 AOS.init();
 setTimeout(changePicture, slideTime);
