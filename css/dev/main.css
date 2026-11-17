@@ -1,6 +1,7 @@
 :root {
   --c1: #73d7ff;
   --c2: hsl(196, 100%, 98%);
+  --c3: #0077b6;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 #banner {
   margin: 0 auto;
   height: 100vh;
+  height: 100svh;
   background-image: url('../../img/tlo/4-cut-min.webp');
   background-size: cover;
   background-position: 50%, 50%;
@@ -34,6 +36,19 @@ body {
   transition-duration:2s;
   -webkit-transition-duration:2s;
   transition-property:background-image;
+}
+
+/* fixed backgrounds are not supported on iOS and stutter on touch devices */
+@media (hover: none) {
+  #banner {
+    background-attachment: scroll;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #banner {
+    transition: none;
+  }
 }
 
 
@@ -54,7 +69,7 @@ body {
 }
 
 .text-blue {
-  color: var(--c1);
+  color: var(--c3);
 }
 
 .bg-blue {

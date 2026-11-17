@@ -1,8 +1,7 @@
 // Production build (npm run build):
 // 1. PurgeCSS: css/dev/*.css -> css/prod/*.css, keeping only selectors used in index.html and js/*.js.
-// 2. Shrinks the Bootstrap Icons font to the bi-* icons used in index.html and points
-//    css/prod/bootstrap-icons.css at css/fonts/bootstrap-icons-subset.woff2.
-import { createHash } from 'node:crypto';
+// 2. Shrinks the Bootstrap Icons font to the bi-* icons used in index.html and inlines it
+//    into css/prod/bootstrap-icons.css, so the icons need no extra request.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 import { PurgeCSS } from 'purgecss';
@@ -29,13 +28,10 @@ const chars = icons.map(icon => {
 }).join('');
 
 const font = await subsetFont(readFileSync('css/fonts/bootstrap-icons.woff2'), chars, { targetFormat: 'woff2' });
-writeFileSync('css/fonts/bootstrap-icons-subset.woff2', font);
-
-const version = createHash('md5').update(font).digest('hex').slice(0, 8);
 const prodCss = readFileSync(prodCssPath, 'utf8')
     .replace(/src:\s*url\("\.\.\/fonts\/bootstrap-icons\.woff2[^;]*;/,
-             `src: url("../fonts/bootstrap-icons-subset.woff2?${version}") format("woff2");`);
-if (!prodCss.includes('bootstrap-icons-subset.woff2')) throw new Error(`No @font-face src found in ${prodCssPath}`);
+             `src: url(data:font/woff2;base64,${font.toString('base64')}) format("woff2");`);
+if (!prodCss.includes('data:font/woff2')) throw new Error(`No @font-face src found in ${prodCssPath}`);
 writeFileSync(prodCssPath, prodCss);
 
-console.log(`css/fonts/bootstrap-icons-subset.woff2: ${icons.length} icons, ${(font.length / 1024).toFixed(1)} KB`);
+console.log(`Icon font: ${icons.length} icons, ${(font.length / 1024).toFixed(1)} KB inlined into ${prodCssPath}`);

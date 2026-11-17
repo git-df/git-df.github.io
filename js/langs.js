@@ -6,6 +6,7 @@ let langsDict = [
     ["nav_contact", "CONTACT", "KONTAKT"],
 
     ["h1_hero", "Hi, I'm Dawid Florian", "Witaj, jestem Dawid Florian"],
+    ["btn_cv", " Download CV", " Pobierz CV"],
 
     ["h2_about", "About", "O mnie"],
     [
@@ -100,7 +101,7 @@ let langsDict = [
     ["5h5_projects","The Daily Dish Service is designed to manage daily dish information from various restaurants. It provides functionalities to retrieve and cache daily dish data, ensuring efficient and quick access to the latest dish information.", "Usługa Daily Dish została zaprojektowana do zarządzania informacjami o daniach dnia z różnych restauracji. Zapewnia funkcje pobierania i buforowania danych dotyczących dań dnia, co gwarantuje efektywny i szybki dostęp do najnowszych informacji o potrawach."],
 
     ["h2_contact","Contact", "Kontakt"],
-    ["p_contact","Feel free to contact me through my social medias or email.", "Zapraszam do kontaktu przez moje media społecznościowe lub e-mail."],
+    ["p_contact","Feel free to reach out by email or on LinkedIn.", "Zapraszam do kontaktu mailowo lub przez LinkedIn."],
 
     ["span_footer"," All rights reserved.", " Wszelkie prawa zastrzeżone."],
 ];
@@ -112,6 +113,7 @@ function translate(lang) {
             document.querySelector('html').lang = lang == "1" ? "pl" : "en";
         });
     })
+    document.getElementById('cvlink').href = lang == "1" ? "file/Dawid_Florian_CV_PL.pdf" : "file/Dawid_Florian_CV_EN.pdf";
 }
 
 langlinks.forEach(link => {

@@ -1,0 +1,18 @@
+# Dawid Florian
+
+> Senior .NET Developer from Podkarpackie, Poland. C#, ASP.NET Core, microservices, Blazor, system integrations and warehouse systems (WMS).
+
+## Experience
+
+- Senior .NET Developer at YES Biżuteria (since 06/2026): requirements analysis with the business, solution architecture, code quality.
+- .NET Developer at YES Biżuteria (05/2025 - 06/2026): batch order picking in the WMS (+40% process efficiency), packing station application built from scratch, Blazor applications, integrations with external services.
+- 9bits (07/2022 - 05/2025): .NET Developer coordinating micro teams, Junior .NET Developer, Junior IT Specialist.
+- Engineer (Computer Science), Rzeszów University of Technology.
+
+## Links
+
+- [Website](https://dawidflorian.pl/)
+- [CV in English (PDF)](https://dawidflorian.pl/file/Dawid_Florian_CV_EN.pdf)
+- [CV in Polish (PDF)](https://dawidflorian.pl/file/Dawid_Florian_CV_PL.pdf)
+- [LinkedIn](https://www.linkedin.com/in/florian-dawid/)
+- [GitHub](https://github.com/git-df)

@@ -4,6 +4,8 @@ var mobUpNav = document.getElementById('mobUpNav');
 var mnItems = document.getElementsByClassName('mn-text');
 var banner = document.getElementById('banner');
 
+var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 var i = 1;
 var slideTime = 8000;
 
@@ -54,12 +56,16 @@ function changePicture() {
     setTimeout(changePicture, slideTime);
 }
 
-var typed = new Typed('#typedtext', {
-    strings: ['^500 Senior .NET Developer ^1000', 'I drink coffee^500.^500.^500. when I code ;)'],
-    typeSpeed: 70,
-});
+if (reducedMotion) {
+    document.getElementById('typedtext').textContent = 'Senior .NET Developer';
+} else {
+    var typed = new Typed('#typedtext', {
+        strings: ['^500 Senior .NET Developer ^1000', 'I drink coffee^500.^500.^500. when I code ;)'],
+        typeSpeed: 70,
+    });
+    setTimeout(changePicture, slideTime);
+}
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-AOS.init();
-setTimeout(changePicture, slideTime);
+AOS.init({ disable: reducedMotion });

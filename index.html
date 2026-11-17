@@ -19,12 +19,30 @@
     <meta name="twitter:title" content="Dawid Florian - Senior .NET Developer">
     <meta name="twitter:image:src" content="https://dawidflorian.pl/img/og-image.jpg">
     <title>Dawid Florian - Senior .NET Developer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dawid Florian",
+        "jobTitle": "Senior .NET Developer",
+        "url": "https://dawidflorian.pl/",
+        "image": "https://dawidflorian.pl/img/me.webp",
+        "worksFor": { "@type": "Organization", "name": "YES Biżuteria" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Rzeszów University of Technology" },
+        "address": { "@type": "PostalAddress", "addressRegion": "Podkarpackie", "addressCountry": "PL" },
+        "knowsAbout": ["C#", ".NET", "ASP.NET Core", "Microservices", "Blazor", "Software Architecture", "System Integration"],
+        "sameAs": ["https://www.linkedin.com/in/florian-dawid/", "https://github.com/git-df"]
+      }
+    </script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- Hero font (largest text on first paint) -->
+    <link rel="preload" href="css/fonts/FwZY7-Qmy14u9lezJ-6H6Mk.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Style [npm run build] -->
     <link href="css/prod/bootstrap.min.css" rel="stylesheet" >
@@ -75,16 +93,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mn-text px-3" target="_blank" href="https://www.facebook.com/dawid.florian.3/" aria-label="facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mn-text px-3" target="_blank" href="https://www.instagram.com/dawid_florcio/" aria-label="instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
               <div class="langs">
                 <a class="ps-2 active" Language="0" href="##">EN</a>
                 <a class="pe-2" Language="1" href="##">PL</a>
@@ -108,16 +116,6 @@
             <li class="nav-item">
               <a class="nav-link px-4" target="_blank" href="https://github.com/git-df" aria-label="github">
                 <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-4" target="_blank" href="https://www.facebook.com/dawid.florian.3/" aria-label="facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-4" target="_blank" href="https://www.instagram.com/dawid_florcio/" aria-label="instagram">
-                <i class="bi bi-instagram"></i>
               </a>
             </li>
             <li class="nav-item">
@@ -158,7 +156,11 @@
         <div style="height: 30px;">
           <h2 class="h3" id="typedtext">&nbsp</h2>
         </div>
-        <a class="nav-link" href="#about" id="downlink" data-aos="fade-up" data-aos-delay="300" aria-label="Scroll down"><i class="bi bi-caret-down"></i></a>
+        <div class="d-flex justify-content-center flex-wrap gap-2 mt-4" data-aos="fade-up" data-aos-delay="200">
+          <a class="btn btn-dark rounded-pill px-4" id="cvlink" href="file/Dawid_Florian_CV_EN.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down"></i><span name="btn_cv"> Download CV</span></a>
+          <a class="btn btn-outline-dark rounded-pill px-4" href="https://www.linkedin.com/in/florian-dawid/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
+        <a class="nav-link mt-3" href="#about" id="downlink" data-aos="fade-up" data-aos-delay="300" aria-label="Scroll down"><i class="bi bi-caret-down"></i></a>
       </div>
     </div>
 
@@ -182,7 +184,7 @@
                 <p data-aos="fade-right" class="h5 mb-3"><span class="text-blue bi bi-buildings"></span><span name="p6_about"> Krosno / Rzeszów, Poland</span></p>
               </div>
               <div data-aos="fade-up" class="col-lg-5 p-4">
-                <img src="img/me.webp" class="img-fluid" alt="Dawid Florian">
+                <img src="img/me.webp" class="img-fluid" width="700" height="1134" alt="Dawid Florian">
                 <div class="d-flex justify-content-between w-100">
                   <span></span>
                   <span class="small text-blue"><a class="nav-link" href="https://www.instagram.com/n_slupek/" target="_blank">#photo by</a></span>
@@ -416,7 +418,7 @@
         <div class="col-lg-8 mx-auto pb-4">
           <header class="mt-lg-5">
             <h2 data-aos="fade-up" class="h2 mb-3"><span class="text-blue">|</span><span name="h2_contact">Contact</span></h2>
-            <p data-aos="fade-up" class="mb-3" name="p_contact">Feel free to contact me through my social medias or email.</p>
+            <p data-aos="fade-up" class="mb-3" name="p_contact">Feel free to reach out by email or on LinkedIn.</p>
           </header>
           <article>
             <div data-aos="fade-up" class="bg-light shadow-lg rounded p-4">
@@ -424,7 +426,7 @@
                 <div class="card m-2 border-0 bg-light">
                   <a href="mailto:dawidflorian99@gmail.com" target="_blank" class="nav-link">
                     <div class="card-body">
-                      <h5 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-envelope"></i><strong class="ps-3">Email</strong></h5>
+                      <h3 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-envelope"></i><strong class="ps-3">Email</strong></h3>
                       <p class="card-text text-center">dawidflorian99@gmail.com</p>
                     </div>
                   </a>
@@ -432,7 +434,7 @@
                 <div class="card m-2 border-0 bg-light">
                   <a href="https://github.com/git-df" target="_blank" class="nav-link">
                     <div class="card-body">
-                      <h5 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-github"></i><strong class="ps-3">  GitHub</strong></h5>
+                      <h3 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-github"></i><strong class="ps-3">  GitHub</strong></h3>
                       <p class="card-text text-center">git-df</p>
                     </div>
                   </a>
@@ -440,7 +442,7 @@
                 <div class="card m-2 border-0 bg-light">
                   <a href="https://www.linkedin.com/in/florian-dawid/" target="_blank" class="nav-link">
                     <div class="card-body">
-                      <h5 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-linkedin"></i><strong class="ps-3"> LinkedIn</strong></h5>
+                      <h3 class="h5 card-title d-flex justify-content-center text-blue"><i class="bi bi-linkedin"></i><strong class="ps-3"> LinkedIn</strong></h3>
                       <p class="card-text text-center">florian-dawid</p>
                     </div>
                   </a>

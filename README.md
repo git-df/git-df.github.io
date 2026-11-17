@@ -16,4 +16,4 @@ The page loads the trimmed CSS from `css/prod`. After changing classes or icons 
 npm install
 npm run build
 ```
-This purges `css/dev/*.css` into `css/prod` and shrinks the Bootstrap Icons font to the `bi-*` icons used in `index.html` (`css/fonts/bootstrap-icons-subset.woff2`).
+This purges `css/dev/*.css` into `css/prod` and shrinks the Bootstrap Icons font to the `bi-*` icons used in `index.html`, inlined into `css/prod/bootstrap-icons.css`.
